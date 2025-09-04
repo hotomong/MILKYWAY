@@ -3,7 +3,7 @@ $(function(){
     $(".home_popup_wrap").show();
     $("body").addClass("scroll_none");
 
-    $(".close").click(function(){
+    $(".popup_close").click(function(){
         $(".home_popup_wrap").fadeOut(1000);
         $("body").removeClass("scroll_none");
     });
