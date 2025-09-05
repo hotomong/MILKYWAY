@@ -88,7 +88,7 @@ a {
 .home_popup_wrap {
   position: fixed;
   top: 50%;
-  left: 50%;
+  left: 20%;
   transform: translate(-50%, -50%);
   width: 434px;
   height: 549px;
@@ -2470,3 +2470,4 @@ footer {
 .footer_sns li a:hover img {
     filter: brightness(0.7);
 }
+
