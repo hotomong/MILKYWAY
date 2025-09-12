@@ -191,17 +191,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // 굿즈
-    var swiper = new Swiper(".goods_swiper", {
-      pagination: {
-        el: ".swiper-pagination",
-        type: "progressbar",
-        
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
+var swiper = new Swiper(".goods_swiper", {
+  pagination: {
+    el: ".swiper-pagination",
+    type: "progressbar",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  autoplay: {
+    delay: 3000, // 3초 간격
+    disableOnInteraction: false, // 사용자 상호작용 후에도 자동재생 유지
+  },
+  loop: true, // 마지막 슬라이드에서 처음으로 돌아가기
+  speed: 800, // 슬라이드 전환 속도 (ms)
+});
+
+
+
 
     
 
@@ -365,3 +373,4 @@ function setupNavThemeDetection() {
 window.addEventListener('scroll', updateNavStyle);
 window.addEventListener('load', updateNavStyle);
 document.addEventListener('DOMContentLoaded', setupNavThemeDetection);
+
